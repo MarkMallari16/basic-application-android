@@ -8,4 +8,11 @@
     </style>
 
     <style name="Theme.BasicApplication" parent="Base.Theme.BasicApplication" />
+  <!-- Base application theme. -->
+    <style name="Base.Base.Theme.BasicApplication" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
+        <item name="materialButtonStyle">@style/Widget.AppCompat.Button</item>
+    </style>
 </resources>
