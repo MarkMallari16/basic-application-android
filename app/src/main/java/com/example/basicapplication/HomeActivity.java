@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class HomeActivity extends AppCompatActivity {
-    Button logoutBtn;
+    ImageButton logoutBtn;
     TextView txtEmail;
     FirebaseAuth mAuth;
 
@@ -42,6 +44,8 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mAuth.signOut();
+                Toast.makeText(HomeActivity.this,"Logging out...",Toast.LENGTH_LONG).show();
+
                 Intent intent = new Intent(HomeActivity.this,MainActivity.class);
                 startActivity(intent);
                 finish();
