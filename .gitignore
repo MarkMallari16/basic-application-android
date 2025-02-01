@@ -1,15 +1,30 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Ignore Gradle files
+.gradle/
+build/
 local.properties
+
+# Ignore Android Studio specific files
+.idea/
+*.iml
+
+# Ignore logs and temporary files
+*.log
+*.hprof
+*.stacktrace
+*.aux
+*.out
+
+# Ignore Gradle wrapper files (if not using the wrapper)
+gradle-wrapper.jar
+
+# Ignore system-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Ignore generated files
+/captures/  # Screenshots from the Android Device Monitor
+
+# Ignore other files that should not be committed
+.idea/
+*.apk
+*.ap_  # APK files
