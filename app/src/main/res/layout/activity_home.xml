@@ -125,51 +125,28 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/gray"
+                android:background="@drawable/custom_task"
                 android:padding="8dp"
-                android:text="Task 1"
+                android:text="Kain"
                 android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="@color/gray"
+                android:background="@drawable/custom_task"
                 android:padding="8dp"
-                android:text="Task 2"
+                android:text="Tulog"
                 android:textSize="18sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="@color/gray"
+                android:background="@drawable/custom_task"
                 android:padding="8dp"
-                android:text="Task 3"
+                android:text="Code"
                 android:textSize="18sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@color/gray"
-                android:padding="8dp"
-                android:text="Task 4"
-                android:textSize="18sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@color/gray"
-                android:padding="8dp"
-                android:text="Task 5"
-                android:textSize="18sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@color/gray"
-                android:padding="8dp"
-                android:text="Task 6"
-                android:textSize="18sp" />
+
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
