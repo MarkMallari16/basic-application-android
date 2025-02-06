@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+
     implementation("com.google.firebase:firebase-auth:23.1.0")
 
     implementation(libs.appcompat)
@@ -47,4 +48,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
 }
