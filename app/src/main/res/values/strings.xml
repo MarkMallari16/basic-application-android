@@ -11,4 +11,6 @@
     <string name="logoutBtn">Logout</string>
     <string name="registration">Registration</string>
     <string name="googleBtn">Sign up with Google</string>
+    <string name="signUpLink">Don\'t have an account? Sign up!</string>
+    <string name="signUpBtn">Sign up</string>
 </resources>
