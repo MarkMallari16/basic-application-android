@@ -43,28 +43,13 @@
             android:id="@+id/imageButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/custom_icon_bg"
             android:padding="4dp"
             android:src="@drawable/baseline_person_24"
-            app:layout_constraintBottom_toBottomOf="@+id/imageButton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.157"
-            app:layout_constraintStart_toEndOf="@+id/imageButton"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="132dp"
-            android:background="@drawable/custom_icon_bg"
-            android:padding="4dp"
-            android:src="@drawable/baseline_notifications_24"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/logoutBtn"
@@ -97,18 +82,17 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
             android:background="@drawable/custom_button"
-            android:paddingHorizontal="10dp"
+            android:drawableEnd="@drawable/baseline_add_24"
             android:drawablePadding="2dp"
 
+            android:paddingHorizontal="10dp"
             android:text="Add task"
             android:textColor="@color/white"
-            android:drawableEnd="@drawable/baseline_add_24"
             app:layout_constraintEnd_toEndOf="@+id/imageButton3"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/textView4"
-            app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+            tools:layout_editor_absoluteY="81dp" />
 
         <LinearLayout
             android:id="@+id/linearLayout"

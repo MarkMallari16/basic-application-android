@@ -10,4 +10,5 @@
     <string name="previous">Previous</string>
     <string name="logoutBtn">Logout</string>
     <string name="registration">Registration</string>
+    <string name="googleBtn">Sign up with Google</string>
 </resources>
