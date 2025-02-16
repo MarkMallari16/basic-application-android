@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".RegistrationActivity">
 
-
     <EditText
         android:id="@+id/inputEmail2"
         android:layout_width="match_parent"
@@ -68,7 +67,6 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/custom_input"
-        android:drawableLeft="@drawable/google_brands_solid"
         android:drawablePadding="8dp"
         android:text="@string/googleBtn"
         android:textAllCaps="true"
