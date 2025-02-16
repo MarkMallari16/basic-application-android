@@ -44,6 +44,20 @@
         app:layout_constraintTop_toBottomOf="@+id/inputEmail2" />
 
     <Button
+        android:id="@+id/googleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="8dp"
+        android:text="@string/googleBtn"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword2"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
         android:id="@+id/submitBtn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,24 +69,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/googleBtn"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="@+id/googleBtn"
         app:layout_constraintTop_toBottomOf="@+id/googleBtn"
         app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/googleBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/custom_input"
-        android:drawablePadding="8dp"
-        android:text="@string/googleBtn"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword2"
-        tools:layout_editor_absoluteX="10dp" />
 
     <TextView
         android:id="@+id/textView6"
