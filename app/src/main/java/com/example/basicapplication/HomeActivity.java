@@ -38,6 +38,7 @@ public class HomeActivity extends AppCompatActivity {
         if (currentUser != null){
             email = currentUser.getEmail();
         }
+
         txtEmail.setText(email);
 
         logoutBtn.setOnClickListener(new View.OnClickListener() {
