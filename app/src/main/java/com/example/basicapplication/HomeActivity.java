@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
 
-        txtEmail = findViewById(R.id.email);
+
         mAuth = FirebaseAuth.getInstance();
         logoutBtn = findViewById(R.id.logoutBtn);
         FirebaseUser currentUser =  mAuth.getCurrentUser();

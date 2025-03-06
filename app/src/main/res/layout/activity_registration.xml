@@ -7,11 +7,31 @@
     android:layout_height="match_parent"
     tools:context=".RegistrationActivity">
 
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/inputEmail"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Create an Account"
         android:textColor="@color/black"
@@ -22,11 +42,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/inputEmail2"
+        android:id="@+id/inputEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/baseline_email_24"
         android:drawablePadding="12dp"
@@ -38,42 +58,31 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         tools:layout_editor_absoluteX="9dp" />
 
-    <EditText
-        android:id="@+id/inputPassword2"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/baseline_sticky_note_2_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        android:layout_marginTop="20dp"
-        android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/baseline_lock_24"
-        android:drawablePadding="12dp"
-        android:ems="10"
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:fontFamily="@font/poppins_regular"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/inputEmail2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/inputEmail2"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail2" />
+        android:text="Sign up to manage your tasks"
+        app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="@+id/textView6" />
 
     <Button
-        android:id="@+id/googleBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/custom_input"
-        android:drawablePadding="8dp"
-        android:text="@string/googleBtn"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword2"
-        tools:layout_editor_absoluteX="9dp" />
-
-    <Button
-        android:id="@+id/submitBtn2"
+        android:id="@+id/signUpBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
@@ -82,48 +91,20 @@
         android:text="@string/signUpBtn"
         android:textAllCaps="true"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/googleBtn"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="@+id/googleBtn"
-        app:layout_constraintTop_toBottomOf="@+id/googleBtn"
-        app:layout_constraintVertical_bias="0.009" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
-        android:src="@drawable/baseline_sticky_note_2_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:fontFamily="@font/poppins_regular"
-        android:text="Sign up to manage your tasks"
-        app:layout_constraintBottom_toTopOf="@+id/inputEmail2"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword"
+        tools:layout_editor_absoluteX="10dp" />
 
     <TextView
         android:id="@+id/txtLoginLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Already have an account? Login!"
         android:fontFamily="@font/poppins_regular"
+        android:text="Already have an account? Login!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submitBtn2"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBtn"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
