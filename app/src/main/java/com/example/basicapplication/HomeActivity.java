@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
 
-
+//        txtEmail = findViewById(R.id.email);
         mAuth = FirebaseAuth.getInstance();
         logoutBtn = findViewById(R.id.logoutBtn);
         FirebaseUser currentUser =  mAuth.getCurrentUser();
@@ -39,7 +39,7 @@ public class HomeActivity extends AppCompatActivity {
             email = currentUser.getEmail();
         }
 
-        txtEmail.setText(email);
+        //txtEmail.setText(email);
 
         logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override

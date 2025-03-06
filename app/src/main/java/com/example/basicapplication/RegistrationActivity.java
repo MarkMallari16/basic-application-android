@@ -23,7 +23,7 @@ public class RegistrationActivity extends AppCompatActivity {
     EditText inputEmail;
     EditText inputPassword;
     TextView txtLoginLink;
-    Button btnSignUpGoogle;
+    Button btnSignUp;
 
     FirebaseAuth mAuth;
 
@@ -37,12 +37,12 @@ public class RegistrationActivity extends AppCompatActivity {
 
         inputEmail = findViewById(R.id.inputEmail);
         inputPassword = findViewById(R.id.inputPassword);
-        btnSignUpGoogle = findViewById(R.id.signUpBtn);
+        btnSignUp = findViewById(R.id.signUpBtn);
 
         txtLoginLink = findViewById(R.id.txtLoginLink);
 
 
-        btnSignUpGoogle.setOnClickListener(new View.OnClickListener() {
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 signUpWithEmail();
@@ -70,6 +70,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
         if (email.isEmpty() || password.isEmpty()){
             Toast.makeText(this,"Email and password are required!",Toast.LENGTH_SHORT).show();
+            return;
         }
 
         mAuth.createUserWithEmailAndPassword(email, password)
@@ -78,6 +79,7 @@ public class RegistrationActivity extends AppCompatActivity {
 //                        FirebaseUser user = mAuth.getCurrentUser();
                         Toast.makeText(this,"Login successful " , Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(RegistrationActivity.this,MainActivity.class));
+                        finish();
                     }else{
                         Toast.makeText(this, "Registration Failed: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
